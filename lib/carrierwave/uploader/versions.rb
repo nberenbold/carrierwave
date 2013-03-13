@@ -17,7 +17,7 @@ module CarrierWave
 
         after :cache, :assign_parent_cache_id
         after :cache, :cache_versions!
-        after :store, :store_versions!
+        #after :store, :store_versions!
         after :remove, :remove_versions!
         after :retrieve_from_cache, :retrieve_versions_from_cache!
         after :retrieve_from_store, :retrieve_versions_from_store!
